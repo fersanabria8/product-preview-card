@@ -1,0 +1,259 @@
+.container{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 50%;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+.card-left{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card-left img{
+  width: 100%;
+}
+
+.card-left img.mobile{
+  display: none;
+}
+
+.card-right{
+  width: 50%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-right .text{
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  gap: 35px;
+
+}
+.card-right .text h4, h1 {
+  width:100%;
+}
+.card-right .text h1{
+  width: 210px;
+  margin-right: 125px;  
+  color: hsl(212, 21%, 14%);
+  line-height: 30px;
+}
+
+.card-right .text h4{
+  letter-spacing: 3.5px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color:  hsl(212, 21%, 14%);
+  opacity: 0.5;
+}
+
+.card-right .text .description{
+  color: hsl(228, 12%, 48%);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  margin-right: 100px;
+  width: 80%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-right .text .price{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 140px;
+}
+
+.card-right .text .price p{ 
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  width: 100%;
+  font-weight: 800;
+  margin-right: 10px;
+}
+.card-right .text .price span{
+  text-decoration: line-through;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-right .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 120px;
+  background-color: hsl(158, 36%, 37%);
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.card-right .button:hover{
+  cursor: pointer;
+  background-color: hsl(157, 100%, 18%);;
+}
+
+.card-right .button span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1330px) {
+ 
+  .container{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+
+  .card-left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    
+  }
+  .card-left img{
+    width: 90%;
+  }
+  
+  .card-left img.mobile{
+    display: block;
+    width: 100%;
+  }
+
+  .card-left img.desktop{
+    display: none;
+  }
+
+  
+  .card-right{
+    width: 90%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-right .text{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 35px;
+  
+  }
+  .card-right .text h4, h1 {
+    width:100%;
+  }
+  .card-right .text h1{
+    width: 100%;
+    color: hsl(212, 21%, 14%);
+    line-height: 30px;
+  }
+  
+  .card-right .text h4{
+    letter-spacing: 3.5px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color:  hsl(212, 21%, 14%);
+    opacity: 0.5;
+  }
+  
+  .card-right .text .description{
+    color: hsl(228, 12%, 48%);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .card-right .text .price{
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .card-right .text .price p{ 
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    width: 100%;
+  }
+  .card-right .text .price span{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .card-right .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  .card-right .button:hover{
+    cursor: pointer;
+    background-color: hsl(157, 100%, 18%);
+  }
+  
+  .card-right .button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
