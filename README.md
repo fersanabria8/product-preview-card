@@ -1,4 +1,4 @@
-[https://lovely-blini-3302c3.netlify.app/](https://prismatic-nougat-bd3c1c.netlify.app/) web live!
+https://prismatic-nougat-bd3c1c.netlify.app/ web live!
 
 # React + Vite
 
